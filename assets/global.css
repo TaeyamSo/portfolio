@@ -1,0 +1,63 @@
+/* Global Variables */
+:root{
+    --main-color: #3498db;
+    --sec-color: #2ecc71;
+}
+
+/* Global Rules  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1.2px;
+
+    
+}
+body{
+    background: rgb(253,93,22);
+    background: linear-gradient(90deg, rgba(253,93,22,1) 0%, rgba(253,137,22,1) 49%);
+    font-family: "Kanit", sans-serif;
+    overflow: hidden; /* Prevents scrolling */
+
+}
+
+@media (max-width: 768px) {
+    body{
+        overflow: auto;
+    }
+}
+/* Allow scrolling while hiding scrollbar */
+
+ul{
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+@keyframes fade-in-3 {
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes fade-in-2 {
+    100%{
+        transform: translate(0,-50%);
+    }
+}
+@keyframes fade-in {
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
